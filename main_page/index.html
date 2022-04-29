@@ -22,14 +22,19 @@
     <title>instagram</title>
 
     <style>
+        /*-------- 전체 부분 시작 --------*/
         body {
             max-height: 100%;
             max-width: 100%;
             margin: 0;
             background-color: #FAFAFA;
         }
+        /*-------- 전체 부분 끝 --------*/
+
+
 
         /*-------- nav 부분 시작 --------*/
+        /*nav 설정*/
         .nav {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -49,7 +54,7 @@
             height: 60px;
             background-color: #ffffff;
             border-bottom: 1px solid #DBDBDB;
-            bottom: 820px;
+            bottom: 880px;
             justify-content: space-between;
         }
 
@@ -59,7 +64,7 @@
             margin-top: 20px;
         }
 
-        /*검색창 부분*/
+        /*검색창 위치 부분*/
         .search-window {
             margin-left: 165px;
             margin-top: 13px;
@@ -67,7 +72,7 @@
             font-size: 16px;
 
         }
-
+        /*검색창 부분*/
         .form-control {
             background-color: #EFEFEF;
             border: none;
@@ -75,17 +80,17 @@
             width: 268px;
             height: 36px;
         }
-
+        /*아이콘 위치 부분*/
         .ikon {
             display: flex;
             padding-top: 18px;
             margin-right: 465px;
         }
-
+        /*아이콘 전체 위치*/
         .all-ikon {
             margin-left: 22px;
         }
-
+        /*내 프로필 부분 이미지 크기*/
         .myimg {
             width: 22px;
             height: 22px;
@@ -120,7 +125,7 @@
             margin-left: 484px;
             margin-top: 24px;
         }
-
+        /*메인-이름 부분 */
         .header-name {
             background-color: #ffffff;
             border-radius: 2px;
@@ -129,37 +134,113 @@
             padding: 16px;
         }
 
+        .header-name > img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .header-name > span {
+            margin-left: 10px;
+        }
+        /*메인-사진 부분 */
         .main-img {
+            width: 614px;
             height: 615px;
             border-bottom: 1px solid #DBDBDB;
             border-left: 1px solid #DBDBDB;
             border-right: 1px solid #DBDBDB;
+            background-size: cover;
         }
-
+        /*메인-아이콘 부분 */
         .main-follow {
+            padding-top: 6px;
             background-color: #ffffff;
             padding: 0px 16px 0px 16px;
             height: 55px;
             border-left: 1px solid #DBDBDB;
             border-right: 1px solid #DBDBDB;
         }
-
+        /*메인- 댓글 부분 */
         .main-comments {
             background-color: #ffffff;
             padding: 0px 16px 0px 16px;
             height: 105px;
             border-left: 1px solid #DBDBDB;
             border-right: 1px solid #DBDBDB;
+            line-height: 18px;
         }
 
+        .comments-img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+        .comments > p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .comments > p > span {
+            font-weight: 500;
+        }
+        .comments > p:nth-child(1) {
+            padding-bottom: 10px;
+        }
+
+        .comments > p:nth-child(3) > span {
+            color: #8E8E8E;
+        }
+
+        .comments > p:nth-child(4) {
+            color: #8E8E8E;
+        }
+        .comments > p:nth-child(5) {
+            font-size: 10px;
+            margin-bottom:  5px;
+            color: #8E8E8E;
+        }
+        /*메인- 댓글 입력창 부분 */
         .main-input {
             background-color: #ffffff;
-            padding: 0px 16px 0px 16px;
+            padding: 6px;
             border-radius: 2px;
+            width: 614px;
             height: 54px;
             border: 1px solid #DBDBDB;
         }
+        /*메인-아이콘 부분 위치 */
+        .main-follow {
+            padding-top: 7px;
+        }
+        /*메인-하트 아이콘 위치 부분 */
+        .love {
+            margin-right: 9px;
+        }
+        /*메인- 말풍선 아이콘 위치 부분 */
+        .comment_leave {
+            margin-right: 9px;
+        }
+        /*메인- 비행기 아이콘 위치 부분 */
+        .sharing {
+            margin-right: 9px;
+        }
+        /*메인- 즐겨찾기 아이콘 위치 부분 */
+        .save {
+            margin-left: 440px;
+            margin-top: 10px;
+        }
 
+        .qwer {
+            position: fixed;
+            right: 490px;
+            bottom: 200px;
+            background-color: #FAFAFA;
+            border: 1px solid black;
+            width: 293px;
+            height: 635px;
+        }
         /*-------- main 부분 끝 --------*/
     </style>
 </head>
@@ -225,15 +306,154 @@
 <div class="main-Content">
     <!--스토리 부분-->
     <div class="story">
-        <div class="story-text">12312</div>
+        <div class="story-text">
+        </div>
     </div>
     <!--메인 부분-->
     <div class="main">
-        <div class="header-name">이미지&이름</div>
-        <div class="main-img">사진</div>
-        <div class="main-follow">팔로우</div>
-        <div class="main-comments">댓글</div>
-        <div class="main-input">댓글 입력</div>
+        <div class="header-name">
+            <img src="faker.jpg"/>
+            <span>faker</span>
+        </div>
+
+        <div><img class="main-img" src="faker_img1.jpg"/></div>
+
+        <div class="main-follow">
+            <svg aria-label="좋아요" class="love" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+            </svg>
+            <svg aria-label="댓글 달기" class="comment_leave" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor"
+                      stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+            <svg aria-label="게시물 공유" class="sharing " color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                      y1="3" y2="10.083"></line>
+                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                         stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+            <svg aria-label="저장" class="save" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+        </div>
+
+        <div class="main-comments">
+            <div class="comments">
+                <p class="good"><img class="comments-img" src="괴물쥐 얼굴.jpg"/><span>ji_hwanzzang</span>님 외 <span>178,046명</span>이 좋아합니다</p>
+                <p><span>faker<span> 내꼬 🚘</p>
+                <p>...<span>더보기</span></p>
+                <p>댓글 1,965개 모두 보기</p>
+                <p>4월 19일</p>
+            </div>
+       </div>
+
+        <div>
+            <input class="main-input" type="search" placeholder="댓글 달기..." aria-label="Search">
+        </div>
+    </div>
+
+    <!--메인 부분-->
+    <div class="main">
+        <div class="header-name">
+            <img src="faker.jpg"/>
+            <span>faker</span>
+        </div>
+
+        <div><img class="main-img" src="faker_img1.jpg"/></div>
+
+        <div class="main-follow">
+            <svg aria-label="좋아요" class="love" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+            </svg>
+            <svg aria-label="댓글 달기" class="comment_leave" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor"
+                      stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+            <svg aria-label="게시물 공유" class="sharing " color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                      y1="3" y2="10.083"></line>
+                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                         stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+            <svg aria-label="저장" class="save" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+        </div>
+
+        <div class="main-comments">
+            <div class="comments">
+                <p class="good"><img class="comments-img" src="괴물쥐 얼굴.jpg"/><span>ji_hwanzzang</span>님 외 <span>178,046명</span>이 좋아합니다</p>
+                <p><span>faker<span> 내꼬 🚘</p>
+                <p>...<span>더보기</span></p>
+                <p>댓글 1,965개 모두 보기</p>
+                <p>4월 19일</p>
+            </div>
+       </div>
+
+        <div>
+            <input class="main-input" type="search" placeholder="댓글 달기..." aria-label="Search">
+        </div>
+    </div>
+
+    <!--메인 부분-->
+    <div class="main">
+        <div class="header-name">
+            <img src="faker.jpg"/>
+            <span>faker</span>
+        </div>
+
+        <div><img class="main-img" src="faker_img1.jpg"/></div>
+
+        <div class="main-follow">
+            <svg aria-label="좋아요" class="love" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+            </svg>
+            <svg aria-label="댓글 달기" class="comment_leave" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor"
+                      stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+            <svg aria-label="게시물 공유" class="sharing " color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                      y1="3" y2="10.083"></line>
+                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                         stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+            <svg aria-label="저장" class="save" color="#262626" fill="#262626" height="24" role="img"
+                 viewBox="0 0 24 24" width="24">
+                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+            </svg>
+        </div>
+
+        <div class="main-comments">
+            <div class="comments">
+                <p class="good"><img class="comments-img" src="괴물쥐 얼굴.jpg"/><span>ji_hwanzzang</span>님 외 <span>178,046명</span>이 좋아합니다</p>
+                <p><span>faker<span> 내꼬 🚘</p>
+                <p>...<span>더보기</span></p>
+                <p>댓글 1,965개 모두 보기</p>
+                <p>4월 19일</p>
+            </div>
+       </div>
+
+        <div>
+            <input class="main-input" type="search" placeholder="댓글 달기..." aria-label="Search">
+        </div>
+    </div>
+    <div class="qwer">
+        asdfas
     </div>
 </div>
 </body>
