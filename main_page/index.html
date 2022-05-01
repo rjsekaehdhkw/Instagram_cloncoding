@@ -112,7 +112,25 @@
 
         /*story-text 부분*/
         .story-text {
-            padding: 16px;
+            margin-left: 32px;
+            padding-top: 7px;
+            font-size: 12px;
+        }
+
+        .story-circle1 {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin-top: 22px;
+            margin-left: 22px;
+        }
+
+        .story-circle2 {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin-top: 22px;
+            margin-left: 22px;
         }
 
         /*-------- story 부분 끝 --------*/
@@ -133,13 +151,13 @@
             border: 1px solid #DBDBDB;
             padding: 16px;
         }
-
+        /*메인-이름 > 이미지 부분 */
         .header-name > img {
             width: 32px;
             height: 32px;
             border-radius: 50%;
         }
-
+        /*메인-이름 > span 부분 */
         .header-name > span {
             margin-left: 10px;
         }
@@ -154,9 +172,8 @@
         }
         /*메인-아이콘 부분 */
         .main-follow {
-            padding-top: 6px;
             background-color: #ffffff;
-            padding: 0px 16px 0px 16px;
+            padding: 6px 16px 0px 16px;
             height: 55px;
             border-left: 1px solid #DBDBDB;
             border-right: 1px solid #DBDBDB;
@@ -170,32 +187,39 @@
             border-right: 1px solid #DBDBDB;
             line-height: 18px;
         }
-
+        /*메인- 댓글 이미지 부분 */
         .comments-img {
             width: 20px;
             height: 20px;
             margin-right: 8px;
             border-radius: 50%;
         }
+        /*메인- 댓글 P 부분 */
         .comments > p {
             margin: 0;
             font-size: 14px;
         }
-
+        /*메인- 댓글 > P > span 부분 */
         .comments > p > span {
             font-weight: 500;
         }
+
+        /*메인- 댓글 p:nth-child(1) 부분 */
         .comments > p:nth-child(1) {
             padding-bottom: 10px;
         }
 
+        /*메인- 댓글 p:nth-child(3) 부분 */
         .comments > p:nth-child(3) > span {
             color: #8E8E8E;
         }
 
+        /*메인- 댓글 p:nth-child(4) 부분 */
         .comments > p:nth-child(4) {
             color: #8E8E8E;
         }
+
+        /*메인- 댓글 p:nth-child(5) 부분 */
         .comments > p:nth-child(5) {
             font-size: 10px;
             margin-bottom:  5px;
@@ -210,38 +234,126 @@
             height: 54px;
             border: 1px solid #DBDBDB;
         }
+
         /*메인-아이콘 부분 위치 */
         .main-follow {
             padding-top: 7px;
         }
+
         /*메인-하트 아이콘 위치 부분 */
         .love {
             margin-right: 9px;
         }
+
         /*메인- 말풍선 아이콘 위치 부분 */
         .comment_leave {
             margin-right: 9px;
         }
+
         /*메인- 비행기 아이콘 위치 부분 */
         .sharing {
             margin-right: 9px;
         }
+
         /*메인- 즐겨찾기 아이콘 위치 부분 */
         .save {
             margin-left: 440px;
             margin-top: 10px;
         }
 
-        .qwer {
+        /*오른쪽 화면 부분*/
+        .follow-page {
             position: fixed;
-            right: 490px;
+            right: 380px;
             bottom: 200px;
             background-color: #FAFAFA;
-            border: 1px solid black;
-            width: 293px;
+            padding-top: 10px;
+            width: 400px;
             height: 635px;
+            font-size: 14px;
         }
+
+        /*내 프로필 원형 부분*/
+        .my-circle {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+        }
+
+        /*내 프로필 전체 부분*/
+        .my-profile {
+            display: flex;
+        }
+         /*내 프로필 id 부분*/
+        .myid {
+            padding-left: 20px;
+            font-weight: 600;
+        }
+        /*내 프로필 이름 부분*/
+        .myname {
+            color: #8E8E8E;
+        }
+        /*내 프로필 전환 부분*/
+        .change {
+            padding-left: 120px;
+            font-weight: 600;
+            font-size: 12px;
+            color: #0095f6;
+        }
+
+        /*회원님을 위한 추천 전체 부분*/
+        .recommendation {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        /*회원님을 위한 추천*/
+        .recommendation-1 {
+            color: #8E8E8E;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /*모두 보기*/
+        .recommendation-2 {
+            margin-left: 130px;
+            font-size: 12px;
+            font-weight: 600;
+
+        }
+
+        /*서브 프로필 원형 부분*/
+        .sub-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        /*서브  프로필 전체 부분*/
+        .sub-profile {
+            display: flex;
+        }
+         /*서브 프로필 id 부분*/
+        .sub-id {
+            padding-left: 20px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+        /*서브 프로필 이름 부분*/
+        .sub-name {
+            color: #8E8E8E;
+        }
+        /*서브 프로필 전환 부분*/
+        .sub-follow {
+            padding-left: 130px;
+            font-weight: 600;
+            font-size: 12px;
+
+            color: #0095f6;
+        }
+
         /*-------- main 부분 끝 --------*/
+
     </style>
 </head>
 <body>
@@ -298,7 +410,7 @@
                     <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
                 </svg>
             </div>
-            <img class="myimg all-ikon" src="myimg.png"/>
+            <img class="myimg all-ikon" src="Reaper.png"/>
         </div>
     </div>
 </nav>
@@ -306,7 +418,12 @@
 <div class="main-Content">
     <!--스토리 부분-->
     <div class="story">
-        <div class="story-text">
+        <div>
+           <img class="story-circle1" src="NOW.jpg">
+           <img class="story-circle2" src="vibe.jpg">
+               <div class="story-text">
+                   <p>now.kr</p>
+               </div>
         </div>
     </div>
     <!--메인 부분-->
@@ -452,8 +569,53 @@
             <input class="main-input" type="search" placeholder="댓글 달기..." aria-label="Search">
         </div>
     </div>
-    <div class="qwer">
-        asdfas
+    <div class="follow-page">
+        <div class="my-profile">
+            <img class="my-circle" src="NOW.jpg"/>
+            <p class="myid">rjsekaehdhkw<br>
+            <span class="myname">김민재</span></p>
+            <p class="change">전환</p>
+        </div>
+        <div class="recommendation">
+            <p class="recommendation-1">회원님을 위한 추천</p>
+            <p class="recommendation-2">모두 보기</p>
+        </div>
+        <div class="sub-profile">
+            <img class="sub-circle" src="NOW.jpg"/>
+            <p class="sub-id">rjsekaehdhkw<br>
+            <span class="sub-name">김민재</span></p>
+            <p class="sub-follow">팔로우</p>
+        </div>
+
+        <div class="sub-profile">
+            <img class="sub-circle" src="NOW.jpg"/>
+            <p class="sub-id">rjsekaehdhkw<br>
+            <span class="sub-name">김민재</span></p>
+            <p class="sub-follow">팔로우</p>
+        </div>
+
+        <div class="sub-profile">
+            <img class="sub-circle" src="NOW.jpg"/>
+            <p class="sub-id">rjsekaehdhkw<br>
+            <span class="sub-name">김민재</span></p>
+            <p class="sub-follow">팔로우</p>
+        </div>
+
+        <div class="sub-profile">
+            <img class="sub-circle" src="NOW.jpg"/>
+            <p class="sub-id">rjsekaehdhkw<br>
+            <span class="sub-name">김민재</span></p>
+            <p class="sub-follow">팔로우</p>
+        </div>
+
+        <div class="sub-profile">
+            <img class="sub-circle" src="NOW.jpg"/>
+            <p class="sub-id">rjsekaehdhkw<br>
+            <span class="sub-name">김민재</span></p>
+            <p class="sub-follow">팔로우</p>
+        </div>
+
+
     </div>
 </div>
 </body>
