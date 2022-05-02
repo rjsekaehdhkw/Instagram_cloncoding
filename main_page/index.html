@@ -29,6 +29,10 @@
             margin: 0;
             background-color: #FAFAFA;
         }
+
+        a {
+            text-decoration-line: none;
+        }
         /*-------- 전체 부분 끝 --------*/
 
 
@@ -54,7 +58,7 @@
             height: 60px;
             background-color: #ffffff;
             border-bottom: 1px solid #DBDBDB;
-            bottom: 880px;
+            bottom: 1020px;
             justify-content: space-between;
         }
 
@@ -118,14 +122,6 @@
         }
 
         .story-circle1 {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            margin-top: 22px;
-            margin-left: 22px;
-        }
-
-        .story-circle2 {
             width: 56px;
             height: 56px;
             border-radius: 50%;
@@ -265,11 +261,11 @@
         .follow-page {
             position: fixed;
             right: 380px;
-            bottom: 200px;
+            bottom: 420px;
             background-color: #FAFAFA;
             padding-top: 10px;
             width: 400px;
-            height: 635px;
+            height: 380px;
             font-size: 14px;
         }
 
@@ -392,34 +388,48 @@
 
         /*-------- main 부분 끝 --------*/
 
+        /*-------- footer 부분 시작 --------*/
+        .footer {
+            width: 100%;
+            height: 200px;
+            margin-top: 30px;
+            background-color: #ffffff;
+            color: #8E8E8E;
+            border-top: 1px solid #DBDBDB;
+            text-align: center;
+            line-height: 100px;
+        }
+
+
+        /*-------- footer 부분 끝 --------*/
     </style>
 </head>
 <body>
 <!--상단 nav-->
 <nav class="nav">
     <div class="container-fluid">
-        <a class="navbar-instagram"><img src="instagram.png"/></a>
+        <a href="#" class="navbar-instagram"><img src="instagram.png"/></a>
         <form class="search-window">
             <input class="form-control material-icons-outlined me-2" type="search" placeholder="검색" aria-label="Search">
         </form>
         <div class="ikon">
             <div class="home-ikon all-ikon">
-                <svg aria-label="홈" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                <a href="#"><svg aria-label="홈" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
                      viewBox="0 0 24 24" width="24">
                     <path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path>
-                </svg>
+                </svg></a>
             </div>
             <div class="airplane-ikon all-ikon">
-                <svg aria-label="Direct" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                <a href="#"><svg aria-label="Direct" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
                      viewBox="0 0 24 24" width="24">
                     <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
                           y1="3" y2="10.083"></line>
                     <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
                              stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                </svg>
+                </svg></a>
             </div>
             <div class="plus-ikon all-ikon">
-                <svg aria-label="새로운 게시물" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                <a href="#"><svg aria-label="새로운 게시물" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
                      viewBox="0 0 24 24" width="24">
                     <path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
                           fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -428,10 +438,10 @@
                           stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
                     <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
-                </svg>
+                </svg></a>
             </div>
             <div class="compass-ikon all-ikon">
-                <svg aria-label="사람 찾기" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                <a href="#"><svg aria-label="사람 찾기" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
                      viewBox="0 0 24 24" width="24">
                     <polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
                              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -440,15 +450,15 @@
                              points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon>
                     <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
                             stroke-linejoin="round" stroke-width="2"></circle>
-                </svg>
+                </svg></a>
             </div>
             <div class="heart-ikon all-ikon">
-                <svg aria-label="활동 피드" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                <a href="#"><svg aria-label="활동 피드" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
                      viewBox="0 0 24 24" width="24">
                     <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
-                </svg>
+                </svg></a>
             </div>
-            <img class="myimg all-ikon" src="리퍼 아이콘.png"/>
+            <a href="#"><img class="myimg all-ikon" src="리퍼 아이콘.png"/></a>
         </div>
     </div>
 </nav>
@@ -457,7 +467,7 @@
     <!--스토리 부분-->
     <div class="story">
         <div>
-           <img class="story-circle1" src="로아 아이콘.png">
+           <a href="https://lostark.game.onstove.com/Promotion/Update/220427/Elgacia"><img class="story-circle1" src="로아 아이콘.png"></a>
                <div class="story-text">
                    <p>lostark.com</p>
                </div>
@@ -596,7 +606,7 @@
             <div class="comments">
                 <p class="good"><img class="comments-img" src="기공사 아이콘.png"/><span>Soul Fist</span>님 외 <span>222,222명</span>이 좋아합니다</p>
                 <p><span>InFighter<span> 보석 2개 숨지마라 유산스카!</p>
-                <p><span>scout</span> 저 안숨었어요..</p>
+                <p><span>Scout</span> 저 안숨었어요..</p>
                 <p>댓글 746개 모두 보기</p>
                 <p>4월 19일</p>
             </div>
@@ -619,7 +629,7 @@
         </div>
         <div class="sub-profile">
             <img class="sub-circle" src="유산 아이콘.png"/>
-            <p class="sub-id">scout<br>
+            <p class="sub-id">Scout<br>
             <span class="sub-name">스카우터</span></p>
             <p class="sub-follow1">팔로우</p>
         </div>
@@ -651,8 +661,10 @@
             <span class="sub-name">아르카나</span></p>
             <p class="sub-follow5">팔로우</p>
         </div>
-
-
+    </div>
+    <div class="footer">
+        <p>소개/도움말/홍보/센터API채용/정보개인정보처리방침/약관/위치/인기 계정/해시태그/언어<br>
+                © 2022 INSTAGRAM FROM META</p>
     </div>
 </div>
 </body>
